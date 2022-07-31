@@ -62,6 +62,7 @@ public class ConfirmTest {
      *
      *
      */
+    @Test
     public void test2(){
         rabbitTemplate.setMandatory(true);
 
