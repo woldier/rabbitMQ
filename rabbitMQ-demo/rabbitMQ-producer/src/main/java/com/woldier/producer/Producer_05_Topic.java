@@ -71,6 +71,9 @@ public class Producer_05_Topic {
         for (int i= 0;i< QUEUE_NAME.length;i++) {
             String s = QUEUE_NAME[i];
             channel.queueDeclare(s,true,false,true,null);
+            /**
+             * 若要订阅更多的topic 在这里进行多次绑定即可
+             */
             channel.queueBind(s,EXCHANGE_NAME,ROUTING_KEY[i]);
         }
 
