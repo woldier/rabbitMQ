@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    host: 192.168.59.130
+    username: woldier
+    password: woldier
+    virtual-host: /woldier
+    port: 5672
+    #-----publisherConfirms增强
+#    publisherConfirms: true
+    #-----publisherConfirms增强
+#    publisherReturns: true
+    #开启ack
+    listener:
+      direct:
+        acknowledge-mode: manual

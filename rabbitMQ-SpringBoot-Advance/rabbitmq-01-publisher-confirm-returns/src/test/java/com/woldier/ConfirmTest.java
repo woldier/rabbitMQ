@@ -48,9 +48,10 @@ public class ConfirmTest {
         /**
          * 这里我们模拟一个到exchange的异常 当前exchange的name 是不存在的
          */
-
-
-        rabbitTemplate.convertAndSend(EXCHANGE_NAME+"1","woldier.1","confirm advance",new CorrelationData());
+        /*正确的 */
+        rabbitTemplate.convertAndSend(EXCHANGE_NAME,"woldier.1","confirm advance",new CorrelationData());
+        /*错误的 */
+        //rabbitTemplate.convertAndSend(EXCHANGE_NAME+"1","woldier.1","confirm advance",new CorrelationData());
     }
 
     /**
