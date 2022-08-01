@@ -8,6 +8,7 @@
         <module>rabbitmq-01-publisher-confirm-returns</module>
         <module>rabbitMQ-02-comsumer-ack</module>
         <module>rabbitMQ-03-consumer-qos</module>
+        <module>rabbitMQ-04-ttl</module>
     </modules>
 
     <parent>
