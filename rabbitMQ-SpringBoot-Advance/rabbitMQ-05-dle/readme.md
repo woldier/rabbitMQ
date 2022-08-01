@@ -2,7 +2,7 @@
 
 队列绑定死信交换机： 给队列设置参数： x-dead-letter-exchange 和 x-dead-letter-routing-key
 
-![image-20220801160424444](C:\Users\wang1\IdeaProjects\rabiitMQ\rabbitMQ-SpringBoot-Advance\rabbitMQ-05-dle\readme.assets\image-20220801160424444.png)
+![image-20220801160424444](.\readme.assets\image-20220801160424444.png)
 
 1. 死信交换机和死信队列和普通的没有区别 
 2. 当消息成为死信后，如果该队列绑定了死信交换机，则消息会被死信交换机重新路由到死信队列 
@@ -159,21 +159,21 @@ public class RabbitPub05 {
 
 
 
-![image-20220801163451242](C:\Users\wang1\IdeaProjects\rabiitMQ\rabbitMQ-SpringBoot-Advance\rabbitMQ-05-dle\readme.assets\image-20220801163451242.png)
+![image-20220801163451242](.\readme.assets\image-20220801163451242.png)
 
 看到下面的queue只有十条 剩余的数据通过死信交换机到达了死信路由(由于之前测试时死信队列加入了10条数据,所以现在看到了有20)清除原所有的数据再次测试
 
-![image-20220801163827966](C:\Users\wang1\IdeaProjects\rabiitMQ\rabbitMQ-SpringBoot-Advance\rabbitMQ-05-dle\readme.assets\image-20220801163827966.png)
+![image-20220801163827966](.\readme.assets\image-20220801163827966.png)
 
 - 继续等待,可以观察到过期情况
 
 等待设置的队列过期时间后可以观察到
 
-![image-20220801163617502](C:\Users\wang1\IdeaProjects\rabiitMQ\rabbitMQ-SpringBoot-Advance\rabbitMQ-05-dle\readme.assets\image-20220801163617502.png)
+![image-20220801163617502](.\readme.assets\image-20220801163617502.png)
 
 (由于之前测试时死信队列加入了10条数据,所以现在看到了有20)清除原所有的数据再次测试
 
-![image-20220801163858154](C:\Users\wang1\IdeaProjects\rabiitMQ\rabbitMQ-SpringBoot-Advance\rabbitMQ-05-dle\readme.assets\image-20220801163858154.png)
+![image-20220801163858154](.\readme.assets\image-20220801163858154.png)
 
 
 
