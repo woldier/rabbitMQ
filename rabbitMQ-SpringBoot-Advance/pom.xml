@@ -10,6 +10,7 @@
         <module>rabbitMQ-03-consumer-qos</module>
         <module>rabbitMQ-04-ttl</module>
         <module>rabbitMQ-05-dle</module>
+        <module>rabbitMQ-06-delay-queue</module>
     </modules>
 
     <parent>
