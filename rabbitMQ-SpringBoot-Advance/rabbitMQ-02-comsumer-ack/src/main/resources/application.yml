@@ -9,7 +9,7 @@ spring:
 #    publisherConfirms: true
     #-----publisherConfirms增强
 #    publisherReturns: true
-    #开启ack
+    #开启ack 为手动
     listener:
-      direct:
+      simple:
         acknowledge-mode: manual
