@@ -1,0 +1,13 @@
+spring:
+  rabbitmq:
+    host: 192.168.59.130
+    username: woldier
+    password: woldier
+    virtual-host: /woldier
+    port: 5672
+    listener:
+      simple:
+        #开启ack 为手动
+        acknowledge-mode: manual
+        #设置预取条数为1(设置了与其必须设置手动确认 不然rabbit 本fetch消费完成之后不会发新的fetch)
+        prefetch: 1

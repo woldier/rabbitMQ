@@ -9,6 +9,7 @@
         <module>rabbitMQ-02-comsumer-ack</module>
         <module>rabbitMQ-03-consumer-qos</module>
         <module>rabbitMQ-04-ttl</module>
+        <module>rabbitMQ-05-dle</module>
     </modules>
 
     <parent>
